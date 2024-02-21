@@ -1,0 +1,153 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+
+  header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+html{
+    scroll-behavior: smooth;
+}
+
+.zoomable-image {
+    transition: transform 0.3s;
+}
+.zoomable-image:hover {
+    transform: scale(1.1);
+    filter: blur(2px);
+    cursor: pointer;
+}
+
+/* SECCION INICIO */
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/diseño.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté encima de otros elementos */
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.concept-box {
+    width: calc(50% - 20px);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto; /* Añadido margen superior e inferior */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+h2 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+
+/* Estilo adicional para el menú desplegable en dispositivos móviles */
+.nav {
+    display: none;
+}
+
+.nav.mostrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.concept-box {
+    width: calc(50% - 20px); /* 50% del ancho de la ventana - 20px de margen */
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Reducido el margen para compensar */
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box; /* Añadido */
+ }
+
+  /* Estilos responsivos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    body {
+        flex-direction: column; /* Cambiado a columna */
+        align-items: center; /* Añadido */
+    }
+    .concept-box {
+        width: calc(100% - 20px); /* 100% del ancho de la ventana - 20px de margen */
+        margin: 10px 0; /* Añadido */
+    }
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+img {
+    max-width: 10%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.notacion {
+    background-color: #333; /* Fondo de la sub-barra */
+    color: #fff;
+    padding: 10px 20px; /* Ajuste de espacio */
+    position: fixed; /* Fijar en la parte inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.notacion p {
+    margin: 5px 0;
+}
